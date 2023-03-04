@@ -4,7 +4,12 @@
   left: 0;
   width: 100%;
   z-index: 999;
+
+  li {
+    cursor: pointer;
+  }
 }
+
 .header__list {
   display: flex;
   justify-content: space-between;
@@ -16,11 +21,13 @@
   letter-spacing: 0.1rem;
   color: var(--white);
 }
+
 .header__item {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .header__item span {
   font-size: 2rem;
 }

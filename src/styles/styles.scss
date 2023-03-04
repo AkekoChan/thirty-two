@@ -14,14 +14,20 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   --saumon: #e0afa0;
   --white: #ffffff;
   --gray: #463f3a;
+  --light-gray: #d9d9d9;
 }

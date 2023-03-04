@@ -1,0 +1,72 @@
+.footer {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 1px;
+}
+
+.footer__help {
+  font-family: "Times Now";
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.footer__accessibility {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 3rem;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  margin-bottom: 2rem;
+}
+
+.footer__title {
+  font-family: "Times Now";
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--white);
+  width: 100%;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.footer__watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+
+  i {
+    font-size: 2rem;
+    color: var(--);
+  }
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.footer__link {
+  font-family: "Helvetica Now Text";
+  font-size: 1.2rem;
+  color: var(--white);
+}

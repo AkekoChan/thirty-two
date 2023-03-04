@@ -1,0 +1,43 @@
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-gray);
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.share__title {
+  font-family: "Times Now";
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.share__list {
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+  margin-bottom: 2rem;
+}
+
+.share__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--white);
+  border-radius: 50%;
+
+  i {
+    font-size: 1.6rem;
+    color: var(--saumon);
+  }
+  span {
+    color: var(--saumon);
+  }
+}
