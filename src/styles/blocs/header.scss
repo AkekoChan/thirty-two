@@ -1,14 +1,26 @@
-// @mixin for-big-desktop {
-//   @media (min-width: 87.5em) {
-//     @content;
-//   }
-// }
-
-// h1 {
-//   font-size: 2rem;
-//   padding: 1rem 0 0 1rem;
-
-//   @include for-big-desktop {
-//     font-size: 4rem;
-//   }
-// }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: var(--white);
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__item span {
+  font-size: 2rem;
+}

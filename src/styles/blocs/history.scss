@@ -1,0 +1,55 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--gray);
+  color: var(--white);
+}
+.history__title {
+  font-family: "Times Now";
+  font-size: 3rem;
+  color: var(--saumon);
+  margin-top: 4rem;
+}
+.history__text {
+  font-family: "Helvetica Now Text";
+  font-size: 2rem;
+}
+.history__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-family: "Retro Signature";
+    font-size: 4rem;
+    transform: translateY(-40px);
+  }
+}
+.history__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  gap: 50px;
+}
+.history__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    font-family: "Times Now";
+    font-size: 3rem;
+    color: var(--saumon);
+  }
+  p {
+    font-family: "Helvetica Now Text";
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 400px;
+  }
+}
+.history__item:nth-child(2) {
+  flex-shrink: 2;
+}
