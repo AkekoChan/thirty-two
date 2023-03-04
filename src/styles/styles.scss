@@ -1,0 +1,22 @@
+// Reset css
+@import "vendors/reset.scss";
+
+// Blocs de style
+@import "blocs/header.scss";
+
+// Style global
+@import "global/font.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --saumon: #e0afa0;
+  --white: #ffffff;
+  --gray: #463f3a;
+}
