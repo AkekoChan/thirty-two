@@ -1,0 +1,441 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.header li {
+  cursor: pointer;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: var(--white);
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__item span {
+  font-size: 2rem;
+}
+
+.hero {
+  background-image: url(../img/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  position: relative;
+  z-index: 200;
+  color: var(--white);
+}
+
+.hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -998;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(60%);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  grid-area: 1/1/2/2;
+}
+
+.hero__title {
+  font-family: "Retro Signature";
+  font-size: 6rem;
+}
+
+.hero__subtitle {
+  font-size: 2.5rem;
+  font-family: "Times Now";
+}
+
+.hero__text {
+  font-family: "Helvetica Now Text";
+  max-width: 350px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.hero__scrollIndicator {
+  grid-area: 1/2/2/3;
+  align-self: flex-end;
+  justify-self: center;
+}
+.hero__scrollIndicator span {
+  font-size: 6rem;
+  color: var(--white);
+}
+
+.hero__moreDetails {
+  grid-area: 1/3/2/4;
+  font-family: "Helvetica Now Text";
+  font-size: 1.6rem;
+  align-self: flex-end;
+  justify-self: center;
+  margin-bottom: 200px;
+}
+.hero__moreDetails div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__moreDetails i {
+  font-size: 8rem;
+}
+.hero__moreDetails p {
+  display: inline-block;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--gray);
+  color: var(--white);
+  scroll-margin: 8rem;
+}
+
+.history__title {
+  font-family: "Times Now";
+  font-size: 3rem;
+  color: var(--saumon);
+  margin-top: 4rem;
+}
+
+.history__text {
+  font-family: "Helvetica Now Text";
+  font-size: 2rem;
+}
+
+.history__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history__logo p {
+  font-family: "Retro Signature";
+  font-size: 4rem;
+  transform: translateY(-40px);
+}
+
+.history__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  gap: 50px;
+}
+
+.history__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history__item span {
+  font-family: "Times Now";
+  font-size: 3rem;
+  color: var(--saumon);
+}
+.history__item p {
+  font-family: "Helvetica Now Text";
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 400px;
+}
+
+.watch {
+  background-color: var(--saumon);
+  padding: 1px;
+}
+
+.watch__title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--gray);
+  margin: 3rem 0;
+}
+
+.watch__wrapper {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.watch__wrapper img {
+  width: 60%;
+}
+
+.watch__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  color: var(--white);
+}
+.watch__content h3 {
+  font-family: "Times Now";
+  font-size: 3rem;
+}
+.watch__content p {
+  color: var(--gray);
+  font-family: "Helvetica Now Text";
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 3rem;
+  max-width: 450px;
+  line-height: 2rem;
+}
+
+.watch__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.watch__logo h3 {
+  font-family: "Retro Signature";
+  font-size: 6rem;
+}
+.watch__logo span {
+  font-family: "Times Now";
+  font-size: 3rem;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+.share li {
+  cursor: pointer;
+}
+
+.share__title {
+  font-family: "Times Now";
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.share__list {
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+  margin-bottom: 2rem;
+}
+
+.share__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.share__item i {
+  font-size: 1.6rem;
+  color: var(--saumon);
+}
+.share__item span {
+  color: var(--saumon);
+}
+
+.footer {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 1px;
+}
+
+.footer__help {
+  font-family: "Times Now";
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.footer__accessibility {
+  display: flex;
+  align-items: center;
+}
+.footer__accessibility span {
+  font-size: 3rem;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  margin-bottom: 2rem;
+}
+
+.footer__title {
+  font-family: "Times Now";
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--white);
+  width: 100%;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.footer__watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+.footer__social i {
+  font-size: 2rem;
+  color: var(--);
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.footer__link {
+  font-family: "Helvetica Now Text";
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  src: url("../../fonts/HelveticaNowText-ExtraLight.woff2") format("woff2"), url("../../fonts/HelveticaNowText-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Retro Signature";
+  src: url("../../fonts/RetroSignatureRegular.woff2") format("woff2"), url("../../fonts/RetroSignatureRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Times Now";
+  src: url("../../fonts/TimesNow-ExtraLight.woff2") format("woff2"), url("../../fonts/TimesNow-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("HelveticaNeue-ThinCond.woff2") format("woff2"), url("HelveticaNeue-ThinCond.woff") format("woff");
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --saumon: #e0afa0;
+  --white: #ffffff;
+  --gray: #463f3a;
+  --light-gray: #d9d9d9;
+}
+
+/*# sourceMappingURL=style.css.map */
